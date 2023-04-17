@@ -5,7 +5,7 @@
 //  Created by Александр Полочанин on 17.04.23.
 //
 
-struct Person {
+struct Person: Hashable {
     let name: String
     let surname: String
     var fullName: String {
@@ -17,16 +17,22 @@ struct Person {
     static func getPerson() -> [Person] {
         var persons: [Person] = []
         
-        for _ in (0...9) {
+        let names = DataStore.getNames().shuffled()
+        let surnames = DataStore.getSurnames().shuffled()
+        let phones = DataStore.getPhones().shuffled()
+        let mails = DataStore.getMails().shuffled()
+        
+        (0...9).forEach { index in
             persons.append(
                 Person(
-                    name: names.randomElement() ?? "",
-                    surname: surnames.randomElement() ?? "",
-                    phone: phones.randomElement() ?? "",
-                    mail: mails.randomElement() ?? ""
+                    name: names[index],
+                    surname: surnames[index],
+                    phone: phones[index],
+                    mail: mails[index]
                 )
             )
         }
+    
         return persons
     }
 }
