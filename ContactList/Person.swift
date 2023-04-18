@@ -5,7 +5,7 @@
 //  Created by Александр Полочанин on 17.04.23.
 //
 
-struct Person: Hashable {
+struct Person {
     let name: String
     let surname: String
     var fullName: String {
@@ -36,5 +36,6 @@ struct Person: Hashable {
         return persons
     }
 }
+
 
 

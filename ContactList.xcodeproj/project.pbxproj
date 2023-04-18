@@ -14,8 +14,9 @@
 		112A9ABE29EDE15700136CE6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112A9ABC29EDE15700136CE6 /* LaunchScreen.storyboard */; };
 		112A9AC629EDE1A500136CE6 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9AC529EDE1A500136CE6 /* DataStore.swift */; };
 		112A9AC829EDE3F900136CE6 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9AC729EDE3F900136CE6 /* Person.swift */; };
-		112A9ACA29EDE77100136CE6 /* ContactsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9AC929EDE77100136CE6 /* ContactsViewController.swift */; };
-		112A9ACC29EDEC7800136CE6 /* ContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9ACB29EDEC7800136CE6 /* ContactViewController.swift */; };
+		112A9ACA29EDE77100136CE6 /* ContactsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9AC929EDE77100136CE6 /* ContactsListViewController.swift */; };
+		112A9ACC29EDEC7800136CE6 /* DetailContactViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9ACB29EDEC7800136CE6 /* DetailContactViewController.swift */; };
+		112A9AF029EEE99C00136CE6 /* CommonListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112A9AEF29EEE99C00136CE6 /* CommonListViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,8 +29,9 @@
 		112A9ABF29EDE15700136CE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112A9AC529EDE1A500136CE6 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		112A9AC729EDE3F900136CE6 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		112A9AC929EDE77100136CE6 /* ContactsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsViewController.swift; sourceTree = "<group>"; };
-		112A9ACB29EDEC7800136CE6 /* ContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactViewController.swift; sourceTree = "<group>"; };
+		112A9AC929EDE77100136CE6 /* ContactsListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsListViewController.swift; sourceTree = "<group>"; };
+		112A9ACB29EDEC7800136CE6 /* DetailContactViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailContactViewController.swift; sourceTree = "<group>"; };
+		112A9AEF29EEE99C00136CE6 /* CommonListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonListViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,8 +68,9 @@
 				112A9AB329EDE15600136CE6 /* SceneDelegate.swift */,
 				112A9AC529EDE1A500136CE6 /* DataStore.swift */,
 				112A9AC729EDE3F900136CE6 /* Person.swift */,
-				112A9AC929EDE77100136CE6 /* ContactsViewController.swift */,
-				112A9ACB29EDEC7800136CE6 /* ContactViewController.swift */,
+				112A9AC929EDE77100136CE6 /* ContactsListViewController.swift */,
+				112A9AEF29EEE99C00136CE6 /* CommonListViewController.swift */,
+				112A9ACB29EDEC7800136CE6 /* DetailContactViewController.swift */,
 				112A9AB729EDE15600136CE6 /* Main.storyboard */,
 				112A9ABA29EDE15700136CE6 /* Assets.xcassets */,
 				112A9ABC29EDE15700136CE6 /* LaunchScreen.storyboard */,
@@ -151,8 +154,9 @@
 				112A9AC629EDE1A500136CE6 /* DataStore.swift in Sources */,
 				112A9AB229EDE15600136CE6 /* AppDelegate.swift in Sources */,
 				112A9AB429EDE15600136CE6 /* SceneDelegate.swift in Sources */,
-				112A9ACA29EDE77100136CE6 /* ContactsViewController.swift in Sources */,
-				112A9ACC29EDEC7800136CE6 /* ContactViewController.swift in Sources */,
+				112A9AF029EEE99C00136CE6 /* CommonListViewController.swift in Sources */,
+				112A9ACA29EDE77100136CE6 /* ContactsListViewController.swift in Sources */,
+				112A9ACC29EDEC7800136CE6 /* DetailContactViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
