@@ -8,12 +8,13 @@
 import UIKit
 
 final class CommonListViewController: UITableViewController {
-
-    let contactSList = Person.getPerson()
+    
+    // MARK: - Public properties
+    let contactsList = Person.getPerson()
 
     // MARK: - UITableViewDataSource
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return contactSList.count
+        return contactsList.count
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -21,18 +22,14 @@ final class CommonListViewController: UITableViewController {
     }
 
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        let contact = contactSList[section]
+        let contact = contactsList[section]
         return contact.fullName
-    }
-    
-    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        60
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "sectionCell", for: indexPath)
         var content = cell.defaultContentConfiguration()
-        let contact = contactSList[indexPath.section]
+        let contact = contactsList[indexPath.section]
         
         if indexPath.row == 0 {
             content.text = contact.phone
@@ -41,9 +38,17 @@ final class CommonListViewController: UITableViewController {
             content.text = contact.mail
             content.image = UIImage(named: "mail")
         }
-       
         cell.contentConfiguration = content
 
         return cell
+    }
+    
+    // MARK: - UITableViewDelegate
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
+    
+    override func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        60
     }
 }

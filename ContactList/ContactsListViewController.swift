@@ -7,22 +7,15 @@
 
 import UIKit
 
-class ContactsListViewController: UITableViewController {
+final class ContactsListViewController: UITableViewController {
 
-    
+    // MARK: - Public properties
     let contactsList = Person.getPerson()
-    
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-
-    }
 
     // MARK: - UITableViewDataSource
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return contactsList.count
     }
-
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "contact", for: indexPath)

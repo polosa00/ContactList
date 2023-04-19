@@ -7,7 +7,7 @@
 
 import UIKit
 
-class DetailContactViewController: UIViewController {
+final class DetailContactViewController: UIViewController {
 
     @IBOutlet var phoneLabel: UILabel!
     @IBOutlet var mailLabel: UILabel!
